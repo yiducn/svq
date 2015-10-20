@@ -244,6 +244,9 @@ public class SearchPanel extends JPanel {
 			Map m = jpanelCenter.getColorMap();
 			for(Object o: m.keySet()){
 				jLabel = new JButton();//o.toString());
+				jLabel.setOpaque(true);
+				jLabel.setBorderPainted(false);
+
 				jLabel.setToolTipText(o.toString());
 				jLabel.setPreferredSize(new Dimension(50, 10));
 //				jLabel.setPreferredSize(new Dimension((int)jpanelCenter.getAvgByField("stock_price_adj_close","stock_symbol", o.toString()), 10));
